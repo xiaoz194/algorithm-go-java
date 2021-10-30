@@ -26,12 +26,12 @@ public class Code03_OddEven {
         //eor != 0
         //eor 必然有一位为1
         int rightOne = eor & (~eor+1);//提取二进制中最右边的1
-        int onlyOne = 0;
+        int onlyOne = 0; //eor'
         for (int cur : arr){
             if ((cur & rightOne) == 0)
                 onlyOne ^= cur;
         }
-        int otherOne = eor ^ onlyOne;
+        int otherOne = eor ^ onlyOne; // a^b^a=b
         return new int[]{otherOne,onlyOne};
     }
 
