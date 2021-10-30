@@ -2,7 +2,7 @@ package class01_sort1;
 
 /**
  * @Classname Code07_BinarySearchLocalMin
- * @Description 二分搜索法
+ * @Description 二分搜索法应用
  * 求无序数组的局部最小值，无序数组相邻的数一定不相等
  * @Date 2021/9/7
  * @Created by sanyejiantai qq:2043439620 email:hayami_sora@163.com

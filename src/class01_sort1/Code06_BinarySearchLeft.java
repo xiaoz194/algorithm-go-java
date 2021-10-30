@@ -2,7 +2,7 @@ package class01_sort1;
 
 /**
  * @Classname Code06_BinarySearchLeft
- * @Description 二分搜索法
+ * @Description 二分搜索法应用
  * 在一个有序数组中，找>=某个数最左侧的位置 如 12233333344444444444444555 找>=3最左侧的位置
  * @Date 2021/9/7
  * @Created by sanyejiantai qq:2043439620 email:hayami_sora@163.com
