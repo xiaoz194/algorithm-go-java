@@ -17,7 +17,7 @@ package class02_sort2;
  * **/
 
 //构造大顶堆
-public class Sort07_HeapSort {
+public class Code07_HeapSort {
     public static void main(String[] args) {
         int[] arr = new int[]{2,5,8,1,4,11,7,7,9,8,13};
         heapSort(arr);
