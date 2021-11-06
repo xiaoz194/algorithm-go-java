@@ -3,6 +3,7 @@ package class02_sort2;
 /**
  * @Classname Code06_RandomQuickSort
  * @Description 随机快排
+ * 时间复杂度 O(nlog) 空间复杂度 O(logn)
  * @Date 2021/11/3
  * @Created by sanyejiantai qq:2043439620 email:hayami_sora@163.com
  */
