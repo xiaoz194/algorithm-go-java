@@ -3,7 +3,7 @@ package class01_sort1;
 /**
  * @Classname Code03_OddEven
  * @Description 问题1数组中 一种数出现了奇数次，其他的数都出现了偶数次，怎么找到出现奇数次的数
- * 问题2 数组中两种数出现了奇数次，其他数都出现了偶数次，怎么找到这两种出现奇数次的数
+ *  * 问题2 数组中两种数出现了奇数次，其他数都出现了偶数次，怎么找到这两种出现奇数次的数
  * 要求时间复杂度on，空间复杂度o1
  * @Date 2021/8/31
  * @Created by sanyejiantai qq:2043439620 email:hayami_sora@163.com
