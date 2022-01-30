@@ -27,7 +27,7 @@ public class Code01_IsCircleLinkedList {
         Node n1 = head.next; //s
         Node n2 = head.next.next; //f
         while(n1!=n2){
-            if(head.next==null || head.next.next==null)
+            if(n2.next==null || n2.next.next==null)
                 return null;
             n2 = n2.next.next;
             n1 = n1.next;
