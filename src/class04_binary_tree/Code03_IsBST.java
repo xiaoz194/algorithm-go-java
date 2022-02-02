@@ -17,18 +17,24 @@ public class Code03_IsBST {
 
     public long preVal = Long.MIN_VALUE; //记录遍历过程中上次遇到的数
 
-    public boolean isBST(Node head){
+    /**
+     * 解法1 常规的递归解法
+     * **/
+    public boolean isBSTRecur(Node head){
         if(head == null) return true;
-        boolean isLeftBST = isBST(head.left);
+        boolean isLeftBST = isBSTRecur(head.left);
         if(!isLeftBST) return false;
         if(head.val <= preVal){
             return false;
         }else{
             preVal = head.val;
         }
-        return isBST(head.right);
+        return isBSTRecur(head.right);
     }
 
+    /**
+     * 解法2 非递归解法
+     * **/
     public boolean isBSTUnRecur(Node head){
         if(head != null){
             Stack<Node> stack = new Stack<>();
@@ -48,6 +54,19 @@ public class Code03_IsBST {
                 }
             }
         }
+        return true;
+    }
+
+    /**
+     * 解法3
+     * 递归思路：x当前节点的值
+     * 1.左子树是二叉搜索树
+     * 2.右子树是二叉搜索树
+     * 3.左max < x
+     * 4.右min > x
+     * 套路：封装一个ReturnType：是否是BST，min value，max value
+     * **/
+    public boolean isBST(Node root){
         return true;
     }
 
