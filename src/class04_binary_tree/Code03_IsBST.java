@@ -67,7 +67,42 @@ public class Code03_IsBST {
      * 套路：封装一个ReturnType：是否是BST，min value，max value
      * **/
     public boolean isBST(Node root){
-        return true;
+        return process(root).isB;
+    }
+
+    private ReturnType process(Node x) {
+        if(x == null) return null;
+        ReturnType leftData = process(x.left);
+        ReturnType rightData = process(x.right);
+        int max = x.val;
+        int min = x.val;
+        if(leftData!=null){
+            max = Math.max(leftData.max,max);
+            min = Math.min(leftData.min,min);
+        }
+        if(rightData!=null){
+            max = Math.max(rightData.max,max);
+            min = Math.min(rightData.min,min);
+        }
+        boolean isB = true;
+        if(leftData != null && (!leftData.isB || leftData.max>=x.val)){
+            isB = false;
+        }
+        if(rightData != null &&(!rightData.isB || rightData.min <= x.val)){
+            isB = false;
+        }
+        return new ReturnType(isB,max,min);
+    }
+
+    public static class ReturnType{
+        boolean isB;
+        int max;
+        int min;
+        public ReturnType(boolean isB, int max, int min) {
+            this.isB = isB;
+            this.max = max;
+            this.min = min;
+        }
     }
 
 }
