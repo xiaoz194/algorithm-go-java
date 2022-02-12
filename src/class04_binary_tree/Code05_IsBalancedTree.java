@@ -2,7 +2,7 @@ package class04_binary_tree;
 
 /**
  * @Classname Code05_IsBalancedTree
- * @Description 判断一棵二叉树是否是平衡二叉树
+ * @Description 判断一棵二叉树是否是平衡二叉树（AVL树）
  * 递归思想：
  * 左子树 必须是平衡二叉树，计算高度
  * 右子树 必须是平衡二叉树，计算高度

@@ -28,7 +28,7 @@ public class Code02_BinaryTreeBFS {
     }
 
     public List<List<Integer>> levelOrder(TreeNode root) {
-        if(root == null) return new ArrayList<List<Integer>>();
+        if(root == null) return new ArrayList<>();
         List<List<Integer>> res = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);

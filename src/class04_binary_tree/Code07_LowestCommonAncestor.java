@@ -36,7 +36,7 @@ public class Code07_LowestCommonAncestor {
             set.add(cur);
             cur = fatherMap.get(cur);
         }
-        set.add(root);
+        set.add(cur);
         //找到o2的链中第一个在set里的节点，即他们的最低公共祖先，如果没找到则返回null
         while(o2 != fatherMap.get(cur)){
             if(set.contains(o2)){

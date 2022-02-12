@@ -73,7 +73,7 @@ public class Code01_PreInPosTraversal {
     }
 
     /**
-     * 先序非递归改造后序非递归
+     * 先序非递归改造后序非递归 准备2个栈
      * 1）从栈中弹出cur
      * 2）cur放入收集栈
      * 3）先压左再压右
