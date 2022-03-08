@@ -102,10 +102,7 @@ public class Code01_TrieTree {
                     node = node.nexts[index];
                 }
                 node.end--;
-
             }
-
-
 
         }
 
