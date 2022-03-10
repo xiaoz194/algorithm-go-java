@@ -3,7 +3,7 @@ package class07_greedy_alogrithm;
 /**
  * @Classname Code05_NQueens
  * @Description 例5 n皇后问题：研究的是如何将n个皇后放置在n×n的棋盘上，并且使皇后彼此之间不能相互攻击。
- * 给你一个整数n，返回所有不同的n皇后问题的解决方案。每一种解法包含一个不同的n皇后问题的棋子放置方案。
+ * 给你一个整数n，返回有多少种不同的n皇后问题的解决方案。每一种解法包含一个不同的n皇后问题的棋子放置方案。
  * 时间复杂度 O(n!)
  * @Date 2022/3/8
  * @Created by sanyejiantai qq:2043439620 email:hayami_sora@163.com
