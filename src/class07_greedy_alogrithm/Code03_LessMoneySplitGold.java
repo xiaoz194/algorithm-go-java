@@ -1,6 +1,5 @@
 package class07_greedy_alogrithm;
 
-import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 /**
