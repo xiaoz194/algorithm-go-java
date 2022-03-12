@@ -30,7 +30,6 @@ public class Code03_printAllPermutations {
                 process(str,i+1,res);
                 swap(str,i,j);
             }
-
         }
     }
 
