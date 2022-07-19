@@ -43,15 +43,5 @@ public class Code01_MergeSort {
         for (i = 0;i < help.length;i++){
             arr[l+i] = help[i];
         }
-        
     }
-
-
-
-    
-
-
-
-
-
 }
