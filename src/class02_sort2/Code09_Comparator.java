@@ -71,7 +71,7 @@ public class Code09_Comparator {
         Integer[] arr = {5,4,3,2,7,9,1,0};
         Arrays.sort(arr); //默认从小到大排序
         for(int e:arr) System.out.print(e+" ");
-        //能否让它从大大小排序？ 使用比较器
+        //能否让它从大到小排序？ 使用比较器
         System.out.println();
         Arrays.sort(arr,new DescendingComparator());
         for(int e:arr) System.out.print(e+" ");
