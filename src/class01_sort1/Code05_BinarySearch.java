@@ -4,6 +4,7 @@ package class01_sort1;
  * @Classname Code05_BinarySearch
  * @Description 二分搜索法
  * 在一个有序数组中，找某个数是否存在
+ * 二分法的时间复杂度是logN
  * @Date 2021/9/7
  * @Created by sanyejiantai qq:2043439620 email:hayami_sora@163.com
  */

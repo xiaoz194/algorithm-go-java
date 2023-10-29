@@ -20,6 +20,17 @@ public class Code04_InsertionSort {
         }
     }
 
+
+    public static void insertionSort2(int[] arr) {
+        if(arr == null || arr.length < 2) {
+            return;
+        }
+        for(int i=1;i<arr.length;i++) {
+            for(int j=i;j>=0 && arr[j-1]>arr[j];j--) {
+                swap(arr,j,j-1);
+            }
+        }
+    }
     private static void swap(int[] arr, int i, int j) {
         int tmp =arr[i];
         arr[i] = arr[j];
@@ -34,7 +45,7 @@ public class Code04_InsertionSort {
         for (int i=0;i<testTime;i++){
             int[] arr1 = generateRandomArray(maxSize,maxValue);
             int[] arr2 = copyArr(arr1);
-            insertionSort(arr1);
+            insertionSort2(arr1);
             comparator(arr2);
             if (!isEqual(arr1,arr2)){
                 succeed = false;
