@@ -78,6 +78,9 @@ public class Code04_InsertionSort {
 
     //for test  随机生成器 返回一个长度和值都随机的数组
     public static int[] generateRandomArray(int maxSize,int maxValue){
+        //Math.random() -> [0,1)所有的小数 等概率返回一个
+        //Math.random() * N -> [0,N)所有的小数 等概率返回一个
+        //(int)(Math.random() * N) ->[0,N)所有的整数 等概率返回一个
         int[] arr = new int[(int)Math.random()*(maxSize+1)];
         for (int i = 0;i<arr.length;i++){
             arr[i] = (int)Math.random()*(maxValue+1) - (int)Math.random()*maxValue;

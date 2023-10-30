@@ -7,6 +7,12 @@ package class02_sort2;
  * 2）让其整体有序的过程里用了外排序方法
  * 3）利用master公式求解时间复杂度 O(n*logn) 额外空间复杂度 O(n)
  * 4）归并排序的实质
+ *
+ * master公式： T(N) = a*T(N/b) + O(N^d) a 次数 1/b 自问题规模 O(N^d) 出递归外其他代码的时间复杂度
+ * 等规模的递归问题 可以用master公式计算时间复杂度，如果自问题规模不等，则不能使用master公式
+ * 1）log(b,a) < d 时间复杂度 O(N^d)
+ * 2)log(b,a) > d 时间复杂度 O(N^log(b,a))
+ * 3)log(b,a) == d 时间复杂度 O(N^d*logN)
  * @Date 2021/9/13
  * @Created by sanyejiantai qq:2043439620 email:hayami_sora@163.com
  */
