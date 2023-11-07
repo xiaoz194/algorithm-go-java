@@ -41,7 +41,7 @@ public class Code05_IsBalancedTree {
     }
 
     public ReturnType isBalancedTree(TreeNode root){
-        if(root == null) return new ReturnType(true,0);
+        if(root == null) return new ReturnType(true,0); //base
         ReturnType leftData = isBalancedTree(root.left);
         ReturnType rightData = isBalancedTree(root.right);
         int hei = Math.max(leftData.height,rightData.height) + 1;
