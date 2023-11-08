@@ -60,7 +60,7 @@ public class Code07_LowestCommonAncestor {
     }
 
     /**
-     * 解法2 优化递归思路：
+     * 解法2 优化递归思路： 这个思路要理解并背下来 碰到直接用这种方法写
      * o1与o2的所有结构关系：
      * 1）o1是o2的lca 或 o2是o1的lca
      * 2）o1与o2不互为lca 即它们的lca是其他节点
