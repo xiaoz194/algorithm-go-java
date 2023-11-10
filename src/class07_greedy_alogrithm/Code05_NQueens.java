@@ -3,6 +3,7 @@ package class07_greedy_alogrithm;
 /**
  * @Classname Code05_NQueens
  * @Description 例5 n皇后问题：研究的是如何将n个皇后放置在n×n的棋盘上，并且使皇后彼此之间不能相互攻击。
+ * 已知在同一行、同一列或者同一条斜线上，皇后之间都会相互攻击，即两个皇后在棋盘上不能同行，同列，同斜线
  * 给你一个整数n，返回有多少种不同的n皇后问题的解决方案。每一种解法包含一个不同的n皇后问题的棋子放置方案。
  * 时间复杂度 O(n!)
  * @Date 2022/3/8
@@ -14,15 +15,15 @@ public class Code05_NQueens {
             return 0;
         }
         //record[0] ? record[1] ? record[2]
-        int[] record = new int[n]; //i行的皇后 放在了第几列
+        int[] record = new int[n]; //record[i] -> i行的皇后 放在了第几列
         return process(0,record,n);
     }
-    // 潜台词：record[0,...i-1]的皇后一定不共行，不共列，不共斜线
+    // 潜台词：record[0,...i-1]的任意两个皇后一定不共行，不共列，不共斜线
     // i 目前来到了第几行
     // record[0,...,i-1]表示之前的行，放的皇后的位置
     // n 代表一共多少行
     // 返回值是摆满所有皇后 合法的摆法有多少种
-    public int process(int i,int[] record,int n){
+    public int process(int i,int[] record,int n){ // 其实就是在每一条路上玩DFS
         if(i==n) return 1; // 终止行
         int res = 0;
         for(int j=0;j<n;j++){ //当前行永远在i行，尝试i行所有的列 -> j表示列
