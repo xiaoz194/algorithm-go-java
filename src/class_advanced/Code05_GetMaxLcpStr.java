@@ -1,6 +1,7 @@
 package class_advanced;
 
-
+// 马拉车变种
+// 返回最大回文串
 public class Code05_GetMaxLcpStr {
 
     public static void main(String[] args) {
