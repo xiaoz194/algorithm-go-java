@@ -4,6 +4,7 @@ package class10_monotone_stack;
 import java.util.Stack;
 
 // LCR 038 / 739  每日温度
+// 裸单调栈问题， 可以作为单调栈问题的模版
 public class Code01_DailyTemperatures {
     public static void main(String[] args) {
         int[] t= new int[]{73,74,75,71,69,72,76,73};
