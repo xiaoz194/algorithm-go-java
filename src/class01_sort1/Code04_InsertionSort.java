@@ -21,16 +21,7 @@ public class Code04_InsertionSort {
     }
 
 
-    public static void insertionSort2(int[] arr) {
-        if(arr == null || arr.length < 2) {
-            return;
-        }
-        for(int i=1;i<arr.length;i++) {
-            for(int j=i;j>=0 && arr[j-1]>arr[j];j--) {
-                swap(arr,j,j-1);
-            }
-        }
-    }
+
     private static void swap(int[] arr, int i, int j) {
         int tmp =arr[i];
         arr[i] = arr[j];
@@ -38,14 +29,15 @@ public class Code04_InsertionSort {
     }
 
     public static void main(String[] args) {
-        int testTime = 500000;
-        int maxSize = 100;
-        int maxValue = 100;
+        int testTime = 5;
+        int maxSize = 5;
+        int maxValue = 10;
         boolean succeed = true;
         for (int i=0;i<testTime;i++){
-            int[] arr1 = generateRandomArray(maxSize,maxValue);
-            int[] arr2 = copyArr(arr1);
-            insertionSort2(arr1);
+            int[] arr = generateRandomArray(maxSize,maxValue);
+            int[] arr1 = copyArr(arr);
+            int[] arr2 = copyArr(arr);
+            insertionSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1,arr2)){
                 succeed = false;
@@ -96,10 +88,10 @@ public class Code04_InsertionSort {
         //Math.random() -> [0,1)所有的小数 等概率返回一个
         //Math.random() * N -> [0,N)所有的小数 等概率返回一个
         //(int)(Math.random() * N) ->[0,N)所有的整数 等概率返回一个
-        // (int)Math.random()*(maxSize+1) -> [0,N]
-        int[] arr = new int[(int)Math.random()*(maxSize+1)];
+        // (int) (Math.random() * maxSize) + 1 -> [0,N]
+        int[] arr = new int[(int) (Math.random() * maxSize) + 1];
         for (int i = 0;i<arr.length;i++){
-            arr[i] = (int)Math.random()*(maxValue+1) - (int)Math.random()*maxValue;
+            arr[i] = (int) (Math.random() * maxValue) + 1 - (int)(Math.random()*maxValue);
         }
         return arr;
     }
