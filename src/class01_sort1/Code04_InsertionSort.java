@@ -96,6 +96,7 @@ public class Code04_InsertionSort {
         //Math.random() -> [0,1)所有的小数 等概率返回一个
         //Math.random() * N -> [0,N)所有的小数 等概率返回一个
         //(int)(Math.random() * N) ->[0,N)所有的整数 等概率返回一个
+        // (int)Math.random()*(maxSize+1) -> [0,N]
         int[] arr = new int[(int)Math.random()*(maxSize+1)];
         for (int i = 0;i<arr.length;i++){
             arr[i] = (int)Math.random()*(maxValue+1) - (int)Math.random()*maxValue;
