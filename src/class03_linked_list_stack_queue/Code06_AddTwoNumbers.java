@@ -1,4 +1,4 @@
-package class03_linked_list;
+package class03_linked_list_stack_queue;
 
 // 两数相加 链表相加
 public class Code06_AddTwoNumbers {

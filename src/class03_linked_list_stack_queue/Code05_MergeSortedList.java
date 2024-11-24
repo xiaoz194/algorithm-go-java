@@ -1,4 +1,4 @@
-package class03_linked_list;
+package class03_linked_list_stack_queue;
 
 // 合并两条有序链表
 public class Code05_MergeSortedList {

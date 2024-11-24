@@ -1,4 +1,4 @@
-package class03_linked_list;
+package class03_linked_list_stack_queue;
 
 /**
  * @Classname Code01_IsCircleLinkedList
