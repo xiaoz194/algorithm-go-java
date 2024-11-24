@@ -3,23 +3,6 @@ package class03_linked_list;
 // 合并两条有序链表
 public class Code05_MergeSortedList {
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null || list2 == null) {
             return list1 == null ? list2 : list1;
