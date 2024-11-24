@@ -1,5 +1,8 @@
 package class03_linked_list;
 
+
+// 划分链表
+//https://leetcode.cn/problems/partition-list-lcci/
 public class Code07_PartitionList {
     public ListNode partition(ListNode head, int x) {
         if (head == null) return head;
