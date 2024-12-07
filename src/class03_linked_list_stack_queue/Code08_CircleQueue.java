@@ -13,8 +13,9 @@ public class Code08_CircleQueue {
             limit = k;
         }
 
-        // size < limit 时，入队，尾++，size++，如结束，回0
-        // size > 0 时，出队，头++，size--，如结束，回0
+        // 循环队列的思路：
+        // size < limit 时，入队，尾++，size++，如到数组尾，回到0
+        // size > 0 时，出队，头++，size--，如到数组尾，回0
         public boolean enQueue(int value) {
             if (isFull()) {
                 return false;
