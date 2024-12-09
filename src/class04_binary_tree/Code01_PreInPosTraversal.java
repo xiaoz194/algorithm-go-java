@@ -32,12 +32,28 @@ public class Code01_PreInPosTraversal {
         f(head.right);
     }
 
+    public static void preOrderSimple(Node head){
+        if(head == null)
+            return;
+        System.out.println(head.value);
+        preOrderSimple(head.left);
+        preOrderSimple(head.right);
+    }
+
     public static void inOrder(Node head){
         if(head == null)
             return;
         f(head.left);
         System.out.println(head.value);
         f(head.right);
+    }
+
+    public static void inOrderSimple(Node head){
+        if(head == null)
+            return;
+        inOrderSimple(head.left);
+        System.out.println(head.value);
+        inOrderSimple(head.right);
     }
 
     public static void posOrder(Node head){
@@ -47,6 +63,17 @@ public class Code01_PreInPosTraversal {
         f(head.right);
         System.out.println(head.value);
     }
+
+    public static void posOrderSimple(Node head){
+        if(head == null)
+            return;
+        posOrderSimple(head.left);
+        posOrderSimple(head.right);
+        System.out.println(head.value);
+    }
+
+
+
 
     /**
      *  先序遍历非递归版本
