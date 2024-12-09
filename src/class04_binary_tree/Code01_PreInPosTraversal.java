@@ -5,6 +5,11 @@ import java.util.Stack;
 /**
  * @Classname Code01_PreInPosTraversal
  * @Description 二叉树的遍历
+ *
+ * 二叉树遍历的时间复杂度分析：
+ * 递归和非递归的时间复杂度都是O(n),空间复杂度都是O(h)， h为树的高度
+ * 是否存在时间复杂度O(n),空间复杂度O(1)的遍历方式？ 存在，Morris遍历
+ *
  * @Date 2021/11/17
  * @Created by sanyejiantai qq:2043439620 email:hayami_sora@163.com
  */
@@ -100,7 +105,7 @@ public class Code01_PreInPosTraversal {
     }
 
     /**
-     * 先序非递归改造后序非递归 准备2个栈
+     * 后序非递归改造后序非递归 准备2个栈
      * 1）从栈中弹出cur
      * 2）cur放入收集栈
      * 3）先压左再压右
