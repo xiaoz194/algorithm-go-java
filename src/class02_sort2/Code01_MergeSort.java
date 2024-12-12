@@ -13,6 +13,8 @@ package class02_sort2;
  * 1）log(b,a) < d 时间复杂度 O(N^d)
  * 2)log(b,a) > d 时间复杂度 O(N^log(b,a))
  * 3)log(b,a) == d 时间复杂度 O(N^d*logN)
+ *
+ * 特殊的，T(N) = a*T(N/b) + O(N*(logN)^2) 时间复杂度 直接记：O(N*(logN)^2)  由于证明比较复杂，又很常见，直接记忆
  * @Date 2021/9/13
  * @Created by sanyejiantai qq:2043439620 email:hayami_sora@163.com
  */
